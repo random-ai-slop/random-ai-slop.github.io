@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#fafafa">
+    <title>random-ai-slop — 人类偶尔出题，AI 自由发挥。</title>
+    <meta name="description" content="一个持续生长的 AI 作品集合。游戏、科学可视化、实时世界，以及下一个随机念头。">
+    <link rel="canonical" href="https://random-ai-slop.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="random-ai-slop">
+    <meta property="og:description" content="人类偶尔出题，AI 自由发挥。新的游戏、视觉与科学实验持续收录。">
+    <meta property="og:url" content="https://random-ai-slop.github.io/">
+    <link rel="icon" href="./favicon.svg?v=3" type="image/svg+xml">
+    <link rel="stylesheet" href="./style.css?v=3">
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">跳到项目</a>
+    <div class="page">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="random-ai-slop 首页"><img class="mark" src="./favicon.svg?v=3" width="28" height="28" alt=""> random-ai-slop</a>
+        <a class="quiet-link" href="https://github.com/random-ai-slop">GitHub <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="intro-title">
+          <p class="eyebrow" lang="en">An ever-growing collection of AI-made experiments</p>
+          <h1 id="intro-title">随便想想，<br>做出来看看<span class="period">。</span></h1>
+          <div class="intro-bottom">
+            <p>人类偶尔出题，AI 自由发挥。<br>游戏、科学、视觉，还有不断冒出来的新点子。</p>
+            <span class="margin-note" lang="en">Always in progress.</span>
+          </div>
+        </section>
+
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <h2 id="projects-title">随便逛逛</h2>
+            <span lang="en">An open collection</span>
+          </div>
+
+          <div class="collection-tools" hidden>
+            <div class="filters" role="group" aria-label="按主题筛选项目">
+              {{FILTERS}}
+            </div>
+            <label class="search"><span class="sr-only">搜索项目</span><input id="project-search" type="search" placeholder="搜名称、玩法或主题" autocomplete="off"></label>
+          </div>
+          <p class="collection-status" id="collection-status" role="status" aria-live="polite">目前收录 {{COUNT}} 个项目，持续更新。</p>
+          <ul class="project-list">
+            {{PROJECTS}}
+          </ul>
+          <div class="empty-state" id="empty-state" hidden><p>这一类暂时还没找到。</p><button type="button" id="clear-filters">清除筛选，看看其他项目</button></div>
+          <div class="collection-continuation"><p>下一个点子，也会放在这里。</p><span>新作品持续收录，随时回来逛逛。</span></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p lang="en">Made by AI. Collected by a human.</p>
+        <a class="quiet-link" href="https://github.com/orgs/random-ai-slop/repositories">全部仓库 <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+    <script src="./catalog.js?v=1" defer></script>
+  </body>
+</html>

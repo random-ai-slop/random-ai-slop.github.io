@@ -37,8 +37,7 @@ h1 { margin: 0; font-size: clamp(2.75rem, 6.2vw, 4.75rem); font-weight: 600; let
 .section-heading h2 { margin: 0; font-size: 1rem; font-weight: 600; }
 .section-heading > span { color: var(--muted); font-size: .875rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
 .project-list { margin: 0; padding: 0; list-style: none; }
-.project { display: grid; grid-template-columns: 46px minmax(0, 1fr) auto; gap: 24px; align-items: start; padding: 32px 0; border-bottom: 1px solid var(--line); }
-.project-number { padding-top: 2px; color: var(--muted); font-size: .875rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.project { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: start; padding: 32px 0; border-bottom: 1px solid var(--line); }
 .project-kind { margin: 0 0 9px; color: var(--muted); font-size: .875rem; line-height: 1.5; }
 .project h3 { margin: 0; font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 550; line-height: 1.25; letter-spacing: -.035em; overflow-wrap: anywhere; }
 .project-description { max-width: 620px; margin: 12px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.8; }
@@ -56,8 +55,8 @@ h1 { margin: 0; font-size: clamp(2.75rem, 6.2vw, 4.75rem); font-weight: 600; let
   .eyebrow { font-size: .8125rem; }
   .intro-bottom { display: block; }
   .margin-note { display: none; }
-  .project { grid-template-columns: 25px minmax(0, 1fr); gap: 12px 14px; padding: 27px 0; }
-  .project-links { grid-column: 2; flex-direction: row; align-items: center; gap: 22px; padding-top: 4px; }
+  .project { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 27px 0; }
+  .project-links { grid-column: 1; flex-direction: row; align-items: center; gap: 22px; padding-top: 4px; }
   .project-description { margin-top: 10px; }
   .site-footer { flex-direction: column; align-items: flex-start; gap: 4px; padding-bottom: 28px; }
 }
@@ -68,3 +67,25 @@ h1 { margin: 0; font-size: clamp(2.75rem, 6.2vw, 4.75rem); font-weight: 600; let
   .mark { width: 24px; height: 24px; }
   h1 { font-size: 2.5rem; }
 }
+
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.project-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 9px; }
+.project-meta .project-kind { margin: 0; }
+.new-label { padding: 3px 8px; border-radius: 3px; background: var(--accent); color: var(--ink); font-size: .75rem; line-height: 1.3; }
+.collection-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 24px; padding-top: 24px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 0 14px; font: inherit; font-size: .875rem; border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 4px; cursor: pointer; }
+.filter span { font-size: .75rem; font-variant-numeric: tabular-nums; }
+.filter.active { color: var(--ink); background: var(--accent); border-color: var(--accent); }
+.filter:hover { border-color: var(--ink); }
+.search { display: block; width: min(100%, 260px); }
+.search input { width: 100%; min-height: 42px; border: 1px solid var(--line); border-radius: 4px; background: transparent; padding: 9px 12px; font: inherit; font-size: .875rem; color: var(--ink); }
+.filter:focus-visible, .search input:focus-visible, .empty-state button:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.collection-status { margin: 16px 0 0; padding-bottom: 18px; color: var(--muted); font-size: .8125rem; border-bottom: 1px solid var(--line); }
+.collection-continuation { border-top: 1px solid var(--ink); padding: 26px 0 32px; margin-top: 28px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap; }
+.collection-continuation p { margin: 0; font-size: 1.125rem; font-weight: 550; }
+.collection-continuation span { color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.empty-state { padding: 48px 0; color: var(--muted); }
+.empty-state button { font: inherit; border: none; padding: 8px 0; background: transparent; color: var(--ink); text-decoration: underline; text-underline-offset: .3em; cursor: pointer; }
+@media (max-width:680px) { .collection-tools { align-items: stretch; gap: 14px; } .search { width: 100%; } .filter { padding-inline: 12px; } .collection-continuation { display: block; } .collection-continuation span { display: block; margin-top: 8px; } }

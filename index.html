@@ -6,14 +6,14 @@
     <meta name="color-scheme" content="light">
     <meta name="theme-color" content="#fafafa">
     <title>random-ai-slop — 人类偶尔出题，AI 自由发挥。</title>
-    <meta name="description" content="一些由人起头、由 AI 展开的随机实验。科学可视化、实时世界，以及暂时不知道怎么归类的东西。">
+    <meta name="description" content="一个持续生长的 AI 作品集合。游戏、科学可视化、实时世界，以及下一个随机念头。">
     <link rel="canonical" href="https://random-ai-slop.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="random-ai-slop">
-    <meta property="og:description" content="人类偶尔出题，AI 自由发挥。随便逛逛这些随机实验。">
+    <meta property="og:description" content="人类偶尔出题，AI 自由发挥。新的游戏、视觉与科学实验持续收录。">
     <meta property="og:url" content="https://random-ai-slop.github.io/">
     <link rel="icon" href="./favicon.svg?v=3" type="image/svg+xml">
-    <link rel="stylesheet" href="./style.css?v=2">
+    <link rel="stylesheet" href="./style.css?v=3">
   </head>
   <body>
     <a class="skip-link" href="#projects">跳到项目</a>
@@ -25,25 +25,46 @@
 
       <main>
         <section class="intro" aria-labelledby="intro-title">
-          <p class="eyebrow" lang="en">A collection of AI-made experiments</p>
+          <p class="eyebrow" lang="en">An ever-growing collection of AI-made experiments</p>
           <h1 id="intro-title">随便想想，<br>做出来看看<span class="period">。</span></h1>
           <div class="intro-bottom">
-            <p>人类偶尔出题，AI 自由发挥。<br>一些认真的实验，一些随机的念头，都放在这里。</p>
-            <span class="margin-note" lang="en">No particular plan.</span>
+            <p>人类偶尔出题，AI 自由发挥。<br>游戏、科学、视觉，还有不断冒出来的新点子。</p>
+            <span class="margin-note" lang="en">Always in progress.</span>
           </div>
         </section>
 
         <section id="projects" class="projects" aria-labelledby="projects-title">
           <div class="section-heading">
             <h2 id="projects-title">随便逛逛</h2>
-            <span lang="en">The collection</span>
+            <span lang="en">An open collection</span>
           </div>
 
-          <ol class="project-list">
-            <li class="project">
-              <span class="project-number" aria-hidden="true">01</span>
+          <div class="collection-tools" hidden>
+            <div class="filters" role="group" aria-label="按主题筛选项目">
+              <button type="button" class="filter active" data-category="全部" aria-pressed="true">全部 <span>5</span></button>
+              <button type="button" class="filter" data-category="游戏" aria-pressed="false">游戏 <span>1</span></button>
+              <button type="button" class="filter" data-category="视觉" aria-pressed="false">视觉 <span>1</span></button>
+              <button type="button" class="filter" data-category="科学" aria-pressed="false">科学 <span>2</span></button>
+              <button type="button" class="filter" data-category="展览" aria-pressed="false">展览 <span>1</span></button>
+            </div>
+            <label class="search"><span class="sr-only">搜索项目</span><input id="project-search" type="search" placeholder="搜名称、玩法或主题" autocomplete="off"></label>
+          </div>
+          <p class="collection-status" id="collection-status" role="status" aria-live="polite">目前收录 5 个项目，持续更新。</p>
+          <ul class="project-list">
+            <li class="project" data-project="echoloop" data-category="游戏">
               <div class="project-content">
-                <p class="project-kind">实时世界 / WebGL</p>
+                <div class="project-meta"><p class="project-kind">回声竞技场 / 时间循环街机</p><span class="new-label">新加入</span></div>
+                <h3 lang="en">ECHOLOOP</h3>
+                <p class="project-description">十秒后，你刚走过的路线会变成敌人。收集碎片，躲开过去的自己。</p>
+              </div>
+              <div class="project-links">
+                <a class="visit-link" href="https://random-ai-slop.github.io/echoloop/" aria-label="打开 ECHOLOOP">打开看看 <span aria-hidden="true">↗</span></a>
+                <a class="source-link" href="https://github.com/random-ai-slop/echoloop" aria-label="ECHOLOOP 源码">源码 <span aria-hidden="true">↗</span></a>
+              </div>
+            </li>
+            <li class="project" data-project="aether" data-category="视觉">
+              <div class="project-content">
+                <div class="project-meta"><p class="project-kind">实时世界 / WebGL</p></div>
                 <h3 lang="en">AETHER</h3>
                 <p class="project-description">粒子、行星、群落与分形。六个在浏览器里实时演化的世界。</p>
               </div>
@@ -52,10 +73,9 @@
                 <a class="source-link" href="https://github.com/random-ai-slop/aether" aria-label="AETHER 源码">源码 <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li class="project">
-              <span class="project-number" aria-hidden="true">02</span>
+            <li class="project" data-project="terra-resonance" data-category="科学">
               <div class="project-content">
-                <p class="project-kind">地球脉动 / 科学可视化</p>
+                <div class="project-meta"><p class="project-kind">地球脉动 / 科学可视化</p></div>
                 <h3 lang="en">Terra Resonance</h3>
                 <p class="project-description">从地表到内核，探索地球的振动模态，看见一颗星球如何共鸣。</p>
               </div>
@@ -64,10 +84,9 @@
                 <a class="source-link" href="https://github.com/random-ai-slop/terra-resonance" aria-label="Terra Resonance 源码">源码 <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li class="project">
-              <span class="project-number" aria-hidden="true">03</span>
+            <li class="project" data-project="singularity" data-category="科学">
               <div class="project-content">
-                <p class="project-kind">爆破构造 / 交互演示</p>
+                <div class="project-meta"><p class="project-kind">爆破构造 / 交互演示</p></div>
                 <h3 lang="en">Singularity</h3>
                 <p class="project-description">把 OpenAI 的 Navier–Stokes 爆破构造，做成可交互的旋涡与尺度演示。</p>
               </div>
@@ -76,19 +95,20 @@
                 <a class="source-link" href="https://github.com/random-ai-slop/navier-stokes" aria-label="Singularity 源码">源码 <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li class="project">
-              <span class="project-number" aria-hidden="true">04</span>
+            <li class="project" data-project="surface-proof" data-category="展览">
               <div class="project-content">
-                <p class="project-kind">自主探索 / 在线展览</p>
+                <div class="project-meta"><p class="project-kind">自主探索 / 在线展览</p></div>
                 <h3 lang="en">SURFACE / PROOF</h3>
                 <p class="project-description">一次 AI 自主研究与创作。十二个房间，穿过数学、声音、故事与其他岔路。</p>
               </div>
               <div class="project-links">
-                <a class="visit-link" href="https://random-ai-slop.github.io/autonomous-curiosity-residency/" aria-label="打开 SURFACE / PROOF 展览">打开看看 <span aria-hidden="true">↗</span></a>
+                <a class="visit-link" href="https://random-ai-slop.github.io/autonomous-curiosity-residency/" aria-label="打开 SURFACE / PROOF">打开看看 <span aria-hidden="true">↗</span></a>
                 <a class="source-link" href="https://github.com/random-ai-slop/autonomous-curiosity-residency" aria-label="SURFACE / PROOF 源码">源码 <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-          </ol>
+          </ul>
+          <div class="empty-state" id="empty-state" hidden><p>这一类暂时还没找到。</p><button type="button" id="clear-filters">清除筛选，看看其他项目</button></div>
+          <div class="collection-continuation"><p>下一个点子，也会放在这里。</p><span>新作品持续收录，随时回来逛逛。</span></div>
         </section>
       </main>
 
@@ -97,5 +117,6 @@
         <a class="quiet-link" href="https://github.com/orgs/random-ai-slop/repositories">全部仓库 <span aria-hidden="true">↗</span></a>
       </footer>
     </div>
+    <script src="./catalog.js?v=1" defer></script>
   </body>
 </html>

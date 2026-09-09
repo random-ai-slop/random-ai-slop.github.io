@@ -1,0 +1,48 @@
+[
+  {
+    "id": "echoloop",
+    "name": "ECHOLOOP",
+    "category": "游戏",
+    "kind": "回声竞技场 / 时间循环街机",
+    "description": "十秒后，你刚走过的路线会变成敌人。收集碎片，躲开过去的自己。",
+    "url": "https://random-ai-slop.github.io/echoloop/",
+    "source": "https://github.com/random-ai-slop/echoloop",
+    "isNew": true
+  },
+  {
+    "id": "aether",
+    "name": "AETHER",
+    "category": "视觉",
+    "kind": "实时世界 / WebGL",
+    "description": "粒子、行星、群落与分形。六个在浏览器里实时演化的世界。",
+    "url": "https://random-ai-slop.github.io/aether/",
+    "source": "https://github.com/random-ai-slop/aether"
+  },
+  {
+    "id": "terra-resonance",
+    "name": "Terra Resonance",
+    "category": "科学",
+    "kind": "地球脉动 / 科学可视化",
+    "description": "从地表到内核，探索地球的振动模态，看见一颗星球如何共鸣。",
+    "url": "https://random-ai-slop.github.io/terra-resonance/",
+    "source": "https://github.com/random-ai-slop/terra-resonance"
+  },
+  {
+    "id": "singularity",
+    "name": "Singularity",
+    "category": "科学",
+    "kind": "爆破构造 / 交互演示",
+    "description": "把 OpenAI 的 Navier–Stokes 爆破构造，做成可交互的旋涡与尺度演示。",
+    "url": "https://random-ai-slop.github.io/navier-stokes/",
+    "source": "https://github.com/random-ai-slop/navier-stokes"
+  },
+  {
+    "id": "surface-proof",
+    "name": "SURFACE / PROOF",
+    "category": "展览",
+    "kind": "自主探索 / 在线展览",
+    "description": "一次 AI 自主研究与创作。十二个房间，穿过数学、声音、故事与其他岔路。",
+    "url": "https://random-ai-slop.github.io/autonomous-curiosity-residency/",
+    "source": "https://github.com/random-ai-slop/autonomous-curiosity-residency"
+  }
+]
